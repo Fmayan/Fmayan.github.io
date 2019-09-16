@@ -1,11 +1,60 @@
-
-<html>
+<!DOCTYPE html>
 <head>
+    <title> Moody Music </title>
+    <meta charset='utf-8'>      
+     
 </head>
 
 <body>
-<h1> testing one, two </h1>
+    <h1> What mood are you in? </h1>
 
+    <button onclick="moodChoice(0)"> Happy :) </button>
+    <button onclick="moodChoice(1)"> Sappy :( </button>
+    <button onclick="moodChoice(2)"> Energetic *) </button>
+    <button onclick="moodChoice(3)"> Lazy :? </button>
+    
+    <div id='mytextbox'></div>
+    <script>
+    
+        function moodChoice(value) {
+            choiceVal = value;
+            
+            switch(choiceVal){
+                case 0:
+                    alert('Spread the happiness, share this playlist!');
+                    break;
+                    document.getElementById('mytextbox').innerHTML='<h2>Your playlist is loading..</h2>';
+                case 1:
+                    alert('turn that frown, upside down');
+                    document.getElementById('mytextbox').innerHTML='<h2>Your playlist is loading..</h2>';
+                    
+                case 2:
+                    alert ('Less coffee, more dancing!');
+                    document.getElementById('mytextbox').innerHTML='<h2>Your playlist is loading..</h2>';
+                    
+                    
+                case 3:
+                    alert ('More coffee, less sleep!');
+                    document.getElementById('mytextbox').innerHTML='<h2>Your playlist is loading..</h2>';
+                    
+                    
+                default:
+                    document.getElementById('mytextbox').innerHTML='<h2>Your playlist is loading..</h2>';
+            }
+        }
+      
+        function firstFunction(){
+        alert('You will hear happy music soon');
+        console.log('Share the happiness, by sharing this playlist');
+    <!-- i can use to make button clicked react-->
+        document.getElementById('mytextbox').innerHTML='<br><h2>Your playlist is loading..</h2>';
+}
+        function secondFunction(){
+        alert('You will hear sappy music soon');
+        console.log('Share the happiness, by sharing this playlist');
+        document.getElementById('mytextbox').innerHTML='<br><h2>Your playlist is loading..</h2>';
+}  
+</script>
 </body>
 
 </html>
