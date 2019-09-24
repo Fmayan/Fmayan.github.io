@@ -1,8 +1,16 @@
 <!DOCTYPE html>
+<html>
 <head>
     <title> Moody Music </title>
-    <meta charset='utf-8'>      
+    <meta charset='utf-8'>   
+    <link rel="stylesheet" type="style/css" href="style.css"> 
+    <style>
+    
+     body{
+         background-color: red;
+     }
      
+    </style>
 </head>
 
 <body>
@@ -19,28 +27,47 @@
         function moodChoice(value) {
             choiceVal = value;
             
+    //enter if statement that loops through whichever button a user enters
+        //if (choiceVal == true)
+                
             switch(choiceVal){
                 case 0:
                     alert('Spread the happiness, share this playlist!');
-                    break;
                     document.getElementById('mytextbox').innerHTML='<h2>Your playlist is loading..</h2>';
+                    break;
                 case 1:
                     alert('turn that frown, upside down');
                     document.getElementById('mytextbox').innerHTML='<h2>Your playlist is loading..</h2>';
-                    
+                    break;
+    //if next button is pressed, the "your playlist is loading message" disappears
                 case 2:
                     alert ('Less coffee, more dancing!');
                     document.getElementById('mytextbox').innerHTML='<h2>Your playlist is loading..</h2>';
-                    
+                    break;
                     
                 case 3:
                     alert ('More coffee, less sleep!');
                     document.getElementById('mytextbox').innerHTML='<h2>Your playlist is loading..</h2>';
-                    
+                    break;
                     
                 default:
                     document.getElementById('mytextbox').innerHTML='<h2>Your playlist is loading..</h2>';
             }
+        }
+        
+        function changeMood(){
+        	button = document.getElementById("moodChoice()")
+        	if (button.value == '0') {
+        		document.getElementById('moodStatement').innerHTML = text
+        		document.body.style.backgroundColor = "5465FF";
+        		button.value = '1';
+        	}
+        	else {
+        		text = "Sunshiny feeling";
+        		document.getElementById('moodStatement').innerHTML = text;
+        				document.body.style.backgroundColor = "#FFF278";
+        		button.value = '0';
+        	}
         }
       
         function firstFunction(){
