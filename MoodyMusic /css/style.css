@@ -1,0 +1,84 @@
+body {
+	background-color: white ;
+
+}
+
+*:focus {
+    outline: none;
+}
+
+
+#enter {
+	margin-left: 450px;
+	text-decoration: none;
+	border-style: none;
+	background-color: white;
+}
+
+
+a:visited  {
+	text-decoration: none;
+	
+}
+
+.mood {
+
+	position: fixed;
+	top: 300px;
+	left:300px;
+
+}
+#happy{
+	border: none;
+	background-color: transparent;
+}
+#sad{
+	border-style: none;
+	background-color: transparent;
+}
+#energetic{
+	border-style: none;
+	background-color: transparent;
+}
+#lazy{
+	border-style: none;
+	background-color: transparent;
+}
+
+
+
+img {
+	
+	align-items: relative;
+}
+
+
+h1{
+font-family: Anton, san serif;
+font-size: 80px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: white;
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+text-align: center;
+margin-bottom: -100px;
+} 
+
+h2{
+font-family: Phosphate, san serif;
+font-size: 100px;
+letter-spacing: 10px;
+word-spacing: 1px;
+color: white;
+font-weight: normal;
+text-decoration: none;
+font-style: inline;
+font-variant: inherit;
+text-transform: none;
+text-align: center;
+margin-bottom: -250px;
+} 
