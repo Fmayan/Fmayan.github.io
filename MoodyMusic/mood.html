@@ -5,7 +5,7 @@
 	<title> Pick a Mood </title>
 	<link href="css/style.css" type='text/css' rel="stylesheet" >
 	<script href="js/index.js"> </script>
-	<style> body { background-color: #95A5B8 ;}</style>
+	<style> body { background-color: #95A5B8 ;} </style>
 
 </head>
 <body>
@@ -17,34 +17,57 @@
 <div class="mood">
 
 <a href="happy.html">
-<button id="happy" onlick="pickMood()" value="0"> 
-	<img onmouseover="bigImg1(this)" onmouseout="normalImg1(this)" src="img/happy small.png" width="221" height="285"> 
+<button id="happy"> 
+  <img onmouseover="bigImg1(this)" onmouseout="normalImg1(this)" src="img/happy small.png" width="221" height="285"> 
 </button> 
 </a>
 
 <a href="sad.html">
-<button id="sad" onlick="pickMood()" value="0"> 
+<button id="sad"> 
 	<img onmouseover="bigImg2(this)" onmouseout="normalImg2(this)" src="img/sad small.png" width="221" height="276"> 
 </button>
 </a>
 
 <a href="energetic.html">
-<button id="energetic" onlick="pickMood()" value="0"> 
+<button id="energetic"> 
 <img onmouseover="bigImg3(this)" onmouseout="normalImg3(this)" src="img/energetic small.png" width="258" height="286"> 
 </button>
 </a>
 
 <a href="lazy.html">
-<button id="lazy" onlick="pickMood()" value="0"> 
+<button id="lazy"> 
 <img onmouseover="bigImg4(this)" onmouseout="normalImg4(this)" src="img/lazy small.png" width="221" height="285"> 
 </button>
 </a>
-
 
 </div>
 
 
 <script>
+
+document.getElementById("happy").addEventListener("mouseover",myFunction1);
+function myFunction1(){
+  document.body.style.backgroundColor = "#FFED0B";
+}
+
+document.getElementById("sad").addEventListener("mouseover",myFunction2);
+function myFunction2(){
+  document.body.style.backgroundColor = "black"; 
+}
+
+document.getElementById("energetic").addEventListener("mouseover",myFunction3);
+function myFunction3(){
+  document.body.style.backgroundColor = "#FF6103"; 
+}
+
+document.getElementById("lazy").addEventListener("mouseover",myFunction4);
+function myFunction4(){
+  document.body.style.backgroundColor = "#6F9FFF";
+}
+
+
+
+
 
 function bigImg1(x) {
   x.style.height = "336px";
@@ -54,6 +77,7 @@ function normalImg1(x) {
   x.style.height = "285px";
   x.style.width = "221px";
 }
+
 
 function bigImg2(x) {
   x.style.height = "352px";
@@ -74,6 +98,7 @@ function normalImg3(x) {
   x.style.width = "258px";
 }
 
+
 function bigImg4(x) {
   x.style.height = "346px";
   x.style.width = "277px";
@@ -82,6 +107,7 @@ function normalImg4(x) {
   x.style.height = "285px";
   x.style.width = "221px";
 }
+
 
 function bigImg5(x) {
   x.style.height = "1054px";
@@ -94,13 +120,10 @@ function normalImg5(x) {
 
 
 function pickMood(){
-	button = document.getElementById("happy")
-	if (button.value == '0') {
-		document.body.style.backgroundColor = "00000";
-		button.value = '1';
+	
 	}
 
-}
+
 </script>
 </body>
 
