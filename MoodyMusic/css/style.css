@@ -12,23 +12,19 @@ body {
 
 
 #enter {
-	margin-left: 300px;
+	margin-left: 400px;
 	text-decoration: none;
 	border-style: none;
 	background-color: white;
 }
 
 
-a:visited  {
-	text-decoration: none;
-	
-}
 
 .mood {
 
 	position: fixed;
 	top: 300px;
-	left:300px;
+	left:400px;
 
 }
 #happy{
@@ -58,7 +54,7 @@ img {
 
 h1{
 font-family: Anton, san serif;
-font-size: 80px;
+font-size: 90px;
 letter-spacing: 2px;
 word-spacing: 2px;
 color: white;
@@ -73,7 +69,7 @@ margin-bottom: -100px;
 
 h2{
 font-family: Phosphate, san serif;
-font-size: 100px;
+font-size: 120px;
 letter-spacing: 10px;
 word-spacing: 1px;
 color: white;
