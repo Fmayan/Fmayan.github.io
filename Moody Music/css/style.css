@@ -1,5 +1,6 @@
 body {
 	background-color: white ;
+	text-align: center;
 
 }
 
@@ -8,25 +9,22 @@ body {
 }
 
 
+a:visited  {
+	text-decoration: none;
+	
+}
+
 #enter {
-	margin-left: 450px;
+	text-align: center;
 	text-decoration: none;
 	border-style: none;
 	background-color: white;
 }
 
 
-a:visited  {
-	text-decoration: none;
-	
-}
-
 .mood {
-
-	position: fixed;
-	top: 300px;
-	left:300px;
-
+	margin-top: 300px;
+	
 }
 #happy{
 	border: none;
@@ -46,13 +44,6 @@ a:visited  {
 }
 
 
-
-img {
-	
-	align-items: relative;
-}
-
-
 h1{
 font-family: Anton, san serif;
 font-size: 80px;
@@ -66,6 +57,7 @@ font-variant: normal;
 text-transform: none;
 text-align: center;
 margin-bottom: -100px;
+margin-top:50px;
 } 
 
 h2{
