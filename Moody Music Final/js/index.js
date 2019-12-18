@@ -6,7 +6,6 @@ function bigImg1(x) {
 function normalImg1(x) {
   x.style.height = "285px";
   x.style.width = "221px";
-  alert("Your happy playlist is loading");
 }
 
 function bigImg2(x) {
